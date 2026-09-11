@@ -11,3 +11,40 @@ __pycache__/
 
 # Local security database
 data/security/*.db
+
+# Python virtual environments
+.venv/
+.venv_windows/
+venv/
+env/
+ENV/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+data/security/logs/
+
+# Node
+frontend/node_modules/
+frontend/dist/
+
+# Build/cache
+.vite/
+.cache/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
