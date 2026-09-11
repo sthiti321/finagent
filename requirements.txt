@@ -1,0 +1,11 @@
+uvicorn
+fastapi
+uvicorn[standard]
+pandas
+numpy
+psycopg[binary]
+pgvector
+sentence-transformers
+cryptography
+python-dotenv
+slowapi
