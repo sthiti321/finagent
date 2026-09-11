@@ -1,0 +1,13 @@
+# Environment secrets
+.env
+
+# Python virtual environments
+.venv/
+.venv_windows/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Local security database
+data/security/*.db

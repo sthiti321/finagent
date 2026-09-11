@@ -1,0 +1,545 @@
+/* ============================================================
+   FINAGENT — COMPONENT VISUAL LAYER
+============================================================ */
+
+
+/* ============================================================
+   BRAND
+============================================================ */
+
+aside .h-10.w-10 {
+  border-color:
+    rgba(94,238,255,0.29)
+    !important;
+
+  background:
+    radial-gradient(
+      circle at 35% 28%,
+      rgba(94,238,255,0.15),
+      rgba(29,30,65,0.65)
+    )
+    !important;
+
+  box-shadow:
+    0 0 28px
+      rgba(94,238,255,0.075),
+    inset 0 0 18px
+      rgba(94,238,255,0.04);
+}
+
+aside .h-10.w-10 svg {
+  filter:
+    drop-shadow(
+      0 0 9px
+      rgba(94,238,255,0.55)
+    );
+}
+
+
+/* ============================================================
+   SIDEBAR TITLE
+============================================================ */
+
+aside .text-sm.font-semibold {
+  color:
+    #f0faff
+    !important;
+
+  letter-spacing:
+    0.19em;
+
+  text-shadow:
+    0 0 18px
+      rgba(94,238,255,0.07);
+}
+
+
+/* ============================================================
+   NAVIGATION
+============================================================ */
+
+aside nav button {
+  isolation:
+    isolate;
+}
+
+aside nav button svg {
+  transition:
+    transform 0.22s ease,
+    filter 0.22s ease;
+}
+
+aside nav button:hover svg {
+  transform:
+    translateX(1px)
+    scale(1.06);
+
+  filter:
+    drop-shadow(
+      0 0 7px
+      currentColor
+    );
+}
+
+
+/* ============================================================
+   USER
+============================================================ */
+
+header .h-9.w-9 {
+  border-color:
+    rgba(94,238,255,0.24)
+    !important;
+
+  background:
+    radial-gradient(
+      circle at 35% 30%,
+      rgba(94,238,255,0.13),
+      rgba(17,24,42,0.76)
+    )
+    !important;
+
+  box-shadow:
+    0 0 19px
+      rgba(94,238,255,0.05);
+
+  transition:
+    transform 0.22s ease,
+    box-shadow 0.22s ease;
+}
+
+header .h-9.w-9:hover {
+  transform:
+    scale(1.06);
+
+  box-shadow:
+    0 0 26px
+      rgba(94,238,255,0.10);
+}
+
+
+/* ============================================================
+   PAGE HEADINGS
+============================================================ */
+
+main h1,
+main h2,
+main h3 {
+  letter-spacing:
+    -0.028em;
+}
+
+main h1 {
+  line-height:
+    1.03 !important;
+}
+
+main h1 span {
+  color:
+    #73f0ff
+    !important;
+
+  text-shadow:
+    0 0 22px
+      rgba(94,238,255,0.11);
+}
+
+
+/* ============================================================
+   STAT CARDS
+============================================================ */
+
+main .group.relative.overflow-hidden.rounded-2xl {
+  position:
+    relative;
+
+  isolation:
+    isolate;
+}
+
+main .group.relative.overflow-hidden.rounded-2xl
+  > div.relative
+  > div:last-child {
+  transition:
+    transform 0.28s ease,
+    box-shadow 0.28s ease;
+}
+
+main .group.relative.overflow-hidden.rounded-2xl:hover
+  > div.relative
+  > div:last-child {
+  transform:
+    rotate(-4deg)
+    scale(1.08);
+
+  box-shadow:
+    0 0 26px
+      rgba(94,238,255,0.09);
+}
+
+
+/* ============================================================
+   STAT CARD MICRO-GLOW
+============================================================ */
+
+main .group.relative.overflow-hidden.rounded-2xl::after {
+  content:
+    "";
+
+  position:
+    absolute;
+
+  left:
+    18px;
+
+  right:
+    18px;
+
+  bottom:
+    14px;
+
+  height:
+    3px;
+
+  border-radius:
+    999px;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(94,238,255,0.85),
+      rgba(166,120,255,0.38),
+      rgba(255,255,255,0.05)
+    );
+
+  box-shadow:
+    0 0 10px
+      rgba(94,238,255,0.10);
+
+  opacity:
+    0.80;
+}
+
+main .group.relative.overflow-hidden.rounded-2xl:nth-child(2)::after {
+  background:
+    linear-gradient(
+      90deg,
+      rgba(255,200,90,0.90),
+      rgba(255,157,92,0.34),
+      rgba(255,255,255,0.05)
+    );
+}
+
+main .group.relative.overflow-hidden.rounded-2xl:nth-child(3)::after {
+  background:
+    linear-gradient(
+      90deg,
+      rgba(244,126,199,0.90),
+      rgba(166,120,255,0.38),
+      rgba(255,255,255,0.05)
+    );
+}
+
+main .group.relative.overflow-hidden.rounded-2xl:nth-child(4)::after {
+  background:
+    linear-gradient(
+      90deg,
+      rgba(72,232,198,0.90),
+      rgba(94,238,255,0.32),
+      rgba(255,255,255,0.05)
+    );
+}
+
+
+/* ============================================================
+   LIVE CASE BUTTONS
+============================================================ */
+
+main .xl\:grid-cols-\[1\.45fr_1fr\]
+  > section:nth-child(2)
+  button {
+  border:
+    1px solid
+    rgba(107,135,164,0.14)
+    !important;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(14,25,43,0.65),
+      rgba(11,19,36,0.52)
+    )
+    !important;
+
+  transition:
+    transform 0.22s ease,
+    border-color 0.22s ease,
+    background 0.22s ease,
+    box-shadow 0.22s ease;
+}
+
+main .xl\:grid-cols-\[1\.45fr_1fr\]
+  > section:nth-child(2)
+  button:hover {
+  transform:
+    translateX(4px);
+
+  border-color:
+    rgba(196,167,255,0.19)
+    !important;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(55,43,83,0.30),
+      rgba(9,18,33,0.62)
+    )
+    !important;
+
+  box-shadow:
+    0 8px 26px
+      rgba(0,0,0,0.20);
+}
+
+
+/* ============================================================
+   CUSTOMER / EVIDENCE / REPORT INNER CARDS
+============================================================ */
+
+main .grid > div.rounded-2xl {
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+main .grid > div.rounded-2xl:hover {
+  transform:
+    translateY(-2px);
+
+  border-color:
+    rgba(196,167,255,0.18)
+    !important;
+
+  box-shadow:
+    0 16px 40px
+      rgba(0,0,0,0.18);
+}
+
+
+/* ============================================================
+   SECURITY GAUGES
+============================================================ */
+
+main .relative.flex.h-20.w-20,
+main .relative.flex.h-28.w-28 {
+  box-shadow:
+    0 0 28px
+      rgba(72,232,198,0.035);
+}
+
+main .relative.flex.h-20.w-20
+  > div:last-child,
+main .relative.flex.h-28.w-28
+  > div:last-child {
+  animation:
+    gaugePulse
+    3.4s
+    ease-in-out
+    infinite alternate;
+}
+
+
+/* ============================================================
+   AUDIT TABLE
+============================================================ */
+
+main table th {
+  font-family:
+    "JetBrains Mono",
+    "SFMono-Regular",
+    Consolas,
+    monospace;
+
+  letter-spacing:
+    0.13em;
+}
+
+
+/* ============================================================
+   MODAL
+============================================================ */
+
+.fixed.inset-0
+  > div {
+  border-color:
+    rgba(196,167,255,0.20)
+    !important;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(40,32,64,0.96),
+      rgba(7,14,28,0.97)
+    )
+    !important;
+}
+
+
+/* ============================================================
+   LOGIN EXTRA DETAILS
+============================================================ */
+
+#root
+  > div.relative.flex.min-h-screen.items-center.justify-center
+  > div.relative.w-full.max-w-md
+  .h-12.w-12 {
+  position:
+    relative;
+
+  overflow:
+    visible;
+}
+
+#root
+  > div.relative.flex.min-h-screen.items-center.justify-center
+  > div.relative.w-full.max-w-md
+  .h-12.w-12::after {
+  content:
+    "";
+
+  position:
+    absolute;
+
+  inset:
+    -7px;
+
+  border-radius:
+    inherit;
+
+  border:
+    1px solid
+    rgba(94,238,255,0.09);
+
+  animation:
+    loginRing
+    3.2s
+    ease-in-out
+    infinite;
+}
+
+
+/* ============================================================
+   LIGHT MODE — MANUAL CLASS SUPPORT
+   Use a parent `.light` later if you add a theme toggle.
+============================================================ */
+
+.light {
+  color:
+    #17283b;
+
+  background:
+    #edf4f8;
+}
+
+.light .finagent-dark-only {
+  display:
+    none;
+}
+
+
+/* ============================================================
+   RESPONSIVE
+============================================================ */
+
+@media (max-width: 768px) {
+
+  main .group.relative.overflow-hidden.rounded-2xl {
+    min-height:
+      120px;
+  }
+
+  main .group.relative.overflow-hidden.rounded-2xl
+    .text-3xl {
+    font-size:
+      2rem;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  main h1 {
+    font-size:
+      2rem !important;
+  }
+
+}
+
+
+/* ============================================================
+   REDUCED MOTION
+============================================================ */
+
+@media (prefers-reduced-motion: reduce) {
+
+  *,
+  *::before,
+  *::after {
+    animation-duration:
+      0.001ms !important;
+
+    animation-iteration-count:
+      1 !important;
+
+    transition-duration:
+      0.001ms !important;
+  }
+
+}
+
+
+/* ============================================================
+   ANIMATIONS
+============================================================ */
+
+@keyframes gaugePulse {
+
+  from {
+    filter:
+      drop-shadow(
+        0 0 1px
+        rgba(72,232,198,0.02)
+      );
+  }
+
+  to {
+    filter:
+      drop-shadow(
+        0 0 9px
+        rgba(72,232,198,0.22)
+      );
+  }
+
+}
+
+@keyframes loginRing {
+
+  0%,
+  100% {
+    opacity:
+      0.25;
+
+    transform:
+      scale(0.95);
+  }
+
+  50% {
+    opacity:
+      0.70;
+
+    transform:
+      scale(1.04);
+  }
+
+}
