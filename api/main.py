@@ -399,26 +399,16 @@ async def login(
 # CORS
 # ============================================================
 
-# ============================================================
-# CORS
-# ============================================================
-
 app.add_middleware(
     CORSMiddleware,
-
     allow_origins=[
         "http://localhost:3000",
         "http://127.0.0.1:3000",
-
         "http://localhost:5173",
         "http://127.0.0.1:5173",
-
-        "http://localhost:5174",
-        "http://127.0.0.1:5174",
+        "https://finagent-rrpw.vercel.app",
     ],
-
     allow_credentials=True,
-
     allow_methods=[
         "GET",
         "POST",
@@ -427,7 +417,6 @@ app.add_middleware(
         "DELETE",
         "OPTIONS",
     ],
-
     allow_headers=[
         "Authorization",
         "Content-Type",
@@ -1016,6 +1005,8 @@ async def create_investigation_case(
         require_permission("case:investigate")
     ),
 ):
+    import json
+
     username = current_user.get(
         "username",
         current_user.get("sub", "ADMIN")
@@ -1029,26 +1020,67 @@ async def create_investigation_case(
             detail=f"Customer {customer_id} not found."
         )
 
+    # --------------------------------------------------------
+    # CALCULATE CUSTOMER RISK
+    # --------------------------------------------------------
+
+    risk = calculate_final_risk(
+        customer_id
+    )
+
+    # --------------------------------------------------------
+    # CREATE CASE
+    # --------------------------------------------------------
+
     case = create_case(
         customer_id=customer_id,
         created_by=username,
     )
 
+    case_id = case["case_id"]
+
+    # --------------------------------------------------------
+    # ATTACH RISK TO CASE
+    # --------------------------------------------------------
+
+    attach_case_data(
+        case_id=case_id,
+        field="risk_data",
+        data=json.dumps(
+            risk,
+            default=str
+        ),
+    )
+
+    # --------------------------------------------------------
+    # AUDIT EVENT
+    # --------------------------------------------------------
+
     record_audit_event(
         username=username,
         action="CASE_CREATED",
         resource="INVESTIGATION_CASE",
-        resource_id=case["case_id"],
+        resource_id=case_id,
         ip_address=(
             request.client.host
             if request.client
             else "unknown"
         ),
         result="SUCCESS",
-        details=f"Investigation case created for customer {customer_id}",
+        details=(
+            f"Investigation case created for "
+            f"customer {customer_id} "
+            f"with risk level {risk['final_risk_level']}"
+        ),
     )
 
-    return secure_response(case)
+    # --------------------------------------------------------
+    # RETURN CASE WITH RISK
+    # --------------------------------------------------------
+
+    return secure_response(
+        get_case(case_id)
+    )
 
 
 @app.get("/cases")
