@@ -2212,3 +2212,295 @@
 2026-09-11 18:55:00,143 | INFO | finagent.security | API request | method=GET | path=/customers/C056/network | status=200 | duration=0.070s | ip=127.0.0.1
 2026-09-11 18:55:00,143 | INFO | finagent.security | API request | method=GET | path=/customers/C056/related-accounts | status=200 | duration=0.062s | ip=127.0.0.1
 2026-09-11 18:55:04,943 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/customers/C004/report client=127.0.0.1
+2026-09-11 23:20:46,860 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/docs client=127.0.0.1
+2026-09-11 23:20:46,868 | INFO | finagent.security | API request | method=GET | path=/docs | status=200 | duration=0.005s | ip=127.0.0.1
+2026-09-11 23:20:47,236 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/openapi.json client=127.0.0.1
+2026-09-11 23:20:47,288 | INFO | finagent.security | API request | method=GET | path=/openapi.json | status=200 | duration=0.051s | ip=127.0.0.1
+2026-09-11 23:25:40,235 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/docs client=2405:201:c00f:a101:b8fa:60fc:9604:2277
+2026-09-11 23:25:40,236 | INFO | finagent.security | API request | method=GET | path=/docs | status=400 | duration=0.001s | ip=2405:201:c00f:a101:b8fa:60fc:9604:2277
+2026-09-11 23:25:41,686 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/favicon.ico client=2405:201:c00f:a101:b8fa:60fc:9604:2277
+2026-09-11 23:25:41,687 | INFO | finagent.security | API request | method=GET | path=/favicon.ico | status=400 | duration=0.001s | ip=2405:201:c00f:a101:b8fa:60fc:9604:2277
+2026-09-11 23:31:27,589 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/docs client=2405:201:c00f:a101:b8fa:60fc:9604:2277
+2026-09-11 23:31:27,592 | INFO | finagent.security | API request | method=GET | path=/docs | status=200 | duration=0.002s | ip=2405:201:c00f:a101:b8fa:60fc:9604:2277
+2026-09-11 23:31:28,467 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/openapi.json client=2405:201:c00f:a101:b8fa:60fc:9604:2277
+2026-09-11 23:31:28,470 | INFO | finagent.security | API request | method=GET | path=/openapi.json | status=200 | duration=0.003s | ip=2405:201:c00f:a101:b8fa:60fc:9604:2277
+2026-09-11 23:36:05,169 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/security/metrics client=2405:201:c00f:a101:b8fa:60fc:9604:2277
+2026-09-11 23:36:05,177 | INFO | finagent.security | API request | method=GET | path=/security/metrics | status=401 | duration=0.008s | ip=2405:201:c00f:a101:b8fa:60fc:9604:2277
+2026-09-11 23:36:05,177 | WARNING | finagent.security | EVENT=UNAUTHORIZED_ACCESS | method=GET path=/security/metrics client=2405:201:c00f:a101:b8fa:60fc:9604:2277
+2026-09-11 23:36:05,215 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/cases client=2405:201:c00f:a101:b8fa:60fc:9604:2277
+2026-09-11 23:36:05,224 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/security/posture client=2405:201:c00f:a101:b8fa:60fc:9604:2277
+2026-09-11 23:36:05,226 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/security/incidents client=2405:201:c00f:a101:b8fa:60fc:9604:2277
+2026-09-11 23:36:05,235 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/security/audit client=2405:201:c00f:a101:b8fa:60fc:9604:2277
+2026-09-11 23:36:05,254 | INFO | finagent.security | API request | method=GET | path=/cases | status=401 | duration=0.037s | ip=2405:201:c00f:a101:b8fa:60fc:9604:2277
+2026-09-11 23:36:05,254 | WARNING | finagent.security | EVENT=UNAUTHORIZED_ACCESS | method=GET path=/cases client=2405:201:c00f:a101:b8fa:60fc:9604:2277
+2026-09-11 23:36:05,269 | INFO | finagent.security | API request | method=GET | path=/security/posture | status=401 | duration=0.045s | ip=2405:201:c00f:a101:b8fa:60fc:9604:2277
+2026-09-11 23:36:05,269 | WARNING | finagent.security | EVENT=UNAUTHORIZED_ACCESS | method=GET path=/security/posture client=2405:201:c00f:a101:b8fa:60fc:9604:2277
+2026-09-11 23:36:05,287 | INFO | finagent.security | API request | method=GET | path=/security/incidents | status=401 | duration=0.060s | ip=2405:201:c00f:a101:b8fa:60fc:9604:2277
+2026-09-11 23:36:05,288 | WARNING | finagent.security | EVENT=UNAUTHORIZED_ACCESS | method=GET path=/security/incidents client=2405:201:c00f:a101:b8fa:60fc:9604:2277
+2026-09-11 23:36:05,304 | INFO | finagent.security | API request | method=GET | path=/security/audit | status=401 | duration=0.070s | ip=2405:201:c00f:a101:b8fa:60fc:9604:2277
+2026-09-11 23:36:05,305 | WARNING | finagent.security | EVENT=UNAUTHORIZED_ACCESS | method=GET path=/security/audit client=2405:201:c00f:a101:b8fa:60fc:9604:2277
+2026-09-11 23:36:05,709 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/cases client=2405:201:c00f:a101:b8fa:60fc:9604:2277
+2026-09-11 23:36:05,721 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/security/metrics client=2405:201:c00f:a101:b8fa:60fc:9604:2277
+2026-09-11 23:36:05,731 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/security/posture client=2405:201:c00f:a101:b8fa:60fc:9604:2277
+2026-09-11 23:36:05,738 | INFO | finagent.security | API request | method=GET | path=/cases | status=401 | duration=0.029s | ip=2405:201:c00f:a101:b8fa:60fc:9604:2277
+2026-09-11 23:36:05,738 | WARNING | finagent.security | EVENT=UNAUTHORIZED_ACCESS | method=GET path=/cases client=2405:201:c00f:a101:b8fa:60fc:9604:2277
+2026-09-11 23:36:05,761 | INFO | finagent.security | API request | method=GET | path=/security/metrics | status=401 | duration=0.038s | ip=2405:201:c00f:a101:b8fa:60fc:9604:2277
+2026-09-11 23:36:05,762 | WARNING | finagent.security | EVENT=UNAUTHORIZED_ACCESS | method=GET path=/security/metrics client=2405:201:c00f:a101:b8fa:60fc:9604:2277
+2026-09-11 23:36:05,775 | INFO | finagent.security | API request | method=GET | path=/security/posture | status=401 | duration=0.044s | ip=2405:201:c00f:a101:b8fa:60fc:9604:2277
+2026-09-11 23:36:05,780 | WARNING | finagent.security | EVENT=UNAUTHORIZED_ACCESS | method=GET path=/security/posture client=2405:201:c00f:a101:b8fa:60fc:9604:2277
+2026-09-11 23:36:05,808 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/security/incidents client=2405:201:c00f:a101:b8fa:60fc:9604:2277
+2026-09-11 23:36:05,815 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/security/audit client=2405:201:c00f:a101:b8fa:60fc:9604:2277
+2026-09-11 23:36:05,823 | INFO | finagent.security | API request | method=GET | path=/security/incidents | status=401 | duration=0.014s | ip=2405:201:c00f:a101:b8fa:60fc:9604:2277
+2026-09-11 23:36:05,823 | WARNING | finagent.security | EVENT=UNAUTHORIZED_ACCESS | method=GET path=/security/incidents client=2405:201:c00f:a101:b8fa:60fc:9604:2277
+2026-09-11 23:36:05,838 | INFO | finagent.security | API request | method=GET | path=/security/audit | status=401 | duration=0.023s | ip=2405:201:c00f:a101:b8fa:60fc:9604:2277
+2026-09-11 23:36:05,839 | WARNING | finagent.security | EVENT=UNAUTHORIZED_ACCESS | method=GET path=/security/audit client=2405:201:c00f:a101:b8fa:60fc:9604:2277
+2026-09-11 23:43:41,239 | WARNING | finagent.security | EVENT=IP_BLOCKED | client=2405:201:c00f:a101:b8fa:60fc:9604:2277 path=/auth/login reason=security_threshold_exceeded
+2026-09-11 23:52:39,861 | WARNING | finagent.security | EVENT=IP_BLOCKED | client=2405:201:c00f:a101:b8fa:60fc:9604:2277 path=/auth/login reason=security_threshold_exceeded
+2026-09-11 23:52:41,670 | WARNING | finagent.security | EVENT=IP_BLOCKED | client=2405:201:c00f:a101:b8fa:60fc:9604:2277 path=/auth/login reason=security_threshold_exceeded
+2026-09-11 23:52:44,838 | WARNING | finagent.security | EVENT=IP_BLOCKED | client=2405:201:c00f:a101:b8fa:60fc:9604:2277 path=/auth/login reason=security_threshold_exceeded
+2026-09-11 23:58:56,616 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=POST path=/auth/login client=2405:201:c00f:a101:b8fa:60fc:9604:2277
+2026-09-11 23:58:57,198 | INFO | finagent.security | EVENT=LOGIN_SUCCESS | username=admin role=ADMIN client=2405:201:c00f:a101:b8fa:60fc:9604:2277
+2026-09-11 23:58:57,230 | INFO | finagent.security | API request | method=POST | path=/auth/login | status=200 | duration=0.613s | ip=2405:201:c00f:a101:b8fa:60fc:9604:2277
+2026-09-11 23:58:57,538 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/cases client=2405:201:c00f:a101:b8fa:60fc:9604:2277
+2026-09-11 23:58:57,569 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/security/incidents client=2405:201:c00f:a101:b8fa:60fc:9604:2277
+2026-09-11 23:58:57,573 | INFO | finagent.security | API request | method=GET | path=/cases | status=200 | duration=0.035s | ip=2405:201:c00f:a101:b8fa:60fc:9604:2277
+2026-09-11 23:58:57,581 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/security/posture client=2405:201:c00f:a101:b8fa:60fc:9604:2277
+2026-09-11 23:58:57,603 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/security/audit client=2405:201:c00f:a101:b8fa:60fc:9604:2277
+2026-09-11 23:58:57,607 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/security/metrics client=2405:201:c00f:a101:b8fa:60fc:9604:2277
+2026-09-11 23:59:30,237 | INFO | finagent.security | API request | method=GET | path=/security/incidents | status=200 | duration=32.666s | ip=2405:201:c00f:a101:b8fa:60fc:9604:2277
+2026-09-11 23:59:30,243 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/cases client=2405:201:c00f:a101:b8fa:60fc:9604:2277
+2026-09-11 23:59:30,248 | INFO | finagent.security | API request | method=GET | path=/security/posture | status=200 | duration=32.666s | ip=2405:201:c00f:a101:b8fa:60fc:9604:2277
+2026-09-11 23:59:30,260 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/security/incidents client=2405:201:c00f:a101:b8fa:60fc:9604:2277
+2026-09-11 23:59:30,263 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/security/posture client=2405:201:c00f:a101:b8fa:60fc:9604:2277
+2026-09-11 23:59:30,269 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/security/audit client=2405:201:c00f:a101:b8fa:60fc:9604:2277
+2026-09-11 23:59:30,271 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/security/metrics client=2405:201:c00f:a101:b8fa:60fc:9604:2277
+2026-09-11 23:59:30,297 | INFO | finagent.security | API request | method=GET | path=/security/audit | status=200 | duration=32.694s | ip=2405:201:c00f:a101:b8fa:60fc:9604:2277
+2026-09-11 23:59:30,300 | INFO | finagent.security | API request | method=GET | path=/security/metrics | status=200 | duration=32.693s | ip=2405:201:c00f:a101:b8fa:60fc:9604:2277
+2026-09-11 23:59:34,915 | INFO | finagent.security | API request | method=GET | path=/cases | status=200 | duration=4.672s | ip=2405:201:c00f:a101:b8fa:60fc:9604:2277
+2026-09-11 23:59:34,925 | INFO | finagent.security | API request | method=GET | path=/security/incidents | status=200 | duration=4.665s | ip=2405:201:c00f:a101:b8fa:60fc:9604:2277
+2026-09-11 23:59:34,926 | INFO | finagent.security | API request | method=GET | path=/security/posture | status=200 | duration=4.664s | ip=2405:201:c00f:a101:b8fa:60fc:9604:2277
+2026-09-11 23:59:34,928 | INFO | finagent.security | API request | method=GET | path=/security/metrics | status=200 | duration=4.657s | ip=2405:201:c00f:a101:b8fa:60fc:9604:2277
+2026-09-11 23:59:34,931 | INFO | finagent.security | API request | method=GET | path=/security/audit | status=200 | duration=4.662s | ip=2405:201:c00f:a101:b8fa:60fc:9604:2277
+2026-09-12 00:00:20,125 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/customers/C022 client=2405:201:c00f:a101:b8fa:60fc:9604:2277
+2026-09-12 00:00:20,214 | INFO | finagent.security | API request | method=GET | path=/customers/C022 | status=200 | duration=0.089s | ip=2405:201:c00f:a101:b8fa:60fc:9604:2277
+2026-09-12 00:05:40,536 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/customers/C022 client=49.43.234.205
+2026-09-12 00:05:40,552 | INFO | finagent.security | API request | method=GET | path=/customers/C022 | status=200 | duration=0.017s | ip=49.43.234.205
+2026-09-12 00:05:51,581 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/customers/C044/network client=127.0.0.1
+2026-09-12 00:05:51,591 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/customers/C044/related-accounts client=127.0.0.1
+2026-09-12 00:05:51,659 | INFO | finagent.security | API request | method=GET | path=/customers/C044/network | status=200 | duration=0.078s | ip=127.0.0.1
+2026-09-12 00:05:52,367 | INFO | finagent.security | API request | method=GET | path=/customers/C044/related-accounts | status=200 | duration=0.775s | ip=127.0.0.1
+2026-09-12 00:16:19,312 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=POST path=/auth/login client=2405:201:c00f:a101:b8fa:60fc:9604:2277
+2026-09-12 00:16:19,891 | INFO | finagent.security | EVENT=LOGIN_SUCCESS | username=admin role=ADMIN client=2405:201:c00f:a101:b8fa:60fc:9604:2277
+2026-09-12 00:16:19,915 | INFO | finagent.security | API request | method=POST | path=/auth/login | status=200 | duration=0.603s | ip=2405:201:c00f:a101:b8fa:60fc:9604:2277
+2026-09-12 00:16:20,211 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/security/posture client=2405:201:c00f:a101:b8fa:60fc:9604:2277
+2026-09-12 00:16:30,575 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/security/audit client=2405:201:c00f:a101:b8fa:60fc:9604:2277
+2026-09-12 00:16:30,578 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/security/incidents client=2405:201:c00f:a101:b8fa:60fc:9604:2277
+2026-09-12 00:16:30,583 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/cases client=2405:201:c00f:a101:b8fa:60fc:9604:2277
+2026-09-12 00:16:30,590 | INFO | finagent.security | API request | method=GET | path=/security/posture | status=200 | duration=10.379s | ip=2405:201:c00f:a101:b8fa:60fc:9604:2277
+2026-09-12 00:16:30,601 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/security/metrics client=2405:201:c00f:a101:b8fa:60fc:9604:2277
+2026-09-12 00:16:30,632 | INFO | finagent.security | API request | method=GET | path=/security/audit | status=200 | duration=0.055s | ip=2405:201:c00f:a101:b8fa:60fc:9604:2277
+2026-09-12 00:16:30,633 | INFO | finagent.security | API request | method=GET | path=/security/incidents | status=200 | duration=0.055s | ip=2405:201:c00f:a101:b8fa:60fc:9604:2277
+2026-09-12 00:16:30,635 | INFO | finagent.security | API request | method=GET | path=/cases | status=200 | duration=0.048s | ip=2405:201:c00f:a101:b8fa:60fc:9604:2277
+2026-09-12 00:16:30,638 | INFO | finagent.security | API request | method=GET | path=/security/metrics | status=200 | duration=0.037s | ip=2405:201:c00f:a101:b8fa:60fc:9604:2277
+2026-09-12 00:17:53,743 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=POST path=/auth/login client=2401:4900:9781:f0a:a8eb:c6ff:fe7d:9a72
+2026-09-12 00:17:54,290 | INFO | finagent.security | EVENT=LOGIN_SUCCESS | username=admin role=ADMIN client=2401:4900:9781:f0a:a8eb:c6ff:fe7d:9a72
+2026-09-12 00:17:54,310 | INFO | finagent.security | API request | method=POST | path=/auth/login | status=200 | duration=0.566s | ip=2401:4900:9781:f0a:a8eb:c6ff:fe7d:9a72
+2026-09-12 00:17:54,767 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/security/incidents client=2401:4900:9781:f0a:a8eb:c6ff:fe7d:9a72
+2026-09-12 00:17:54,775 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/security/posture client=2401:4900:9781:f0a:a8eb:c6ff:fe7d:9a72
+2026-09-12 00:17:54,777 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/security/metrics client=2401:4900:9781:f0a:a8eb:c6ff:fe7d:9a72
+2026-09-12 00:17:54,785 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/security/audit client=2401:4900:9781:f0a:a8eb:c6ff:fe7d:9a72
+2026-09-12 00:17:59,468 | INFO | finagent.security | API request | method=GET | path=/security/incidents | status=200 | duration=4.700s | ip=2401:4900:9781:f0a:a8eb:c6ff:fe7d:9a72
+2026-09-12 00:17:59,470 | INFO | finagent.security | API request | method=GET | path=/security/posture | status=200 | duration=4.695s | ip=2401:4900:9781:f0a:a8eb:c6ff:fe7d:9a72
+2026-09-12 00:17:59,472 | INFO | finagent.security | API request | method=GET | path=/security/audit | status=200 | duration=4.686s | ip=2401:4900:9781:f0a:a8eb:c6ff:fe7d:9a72
+2026-09-12 00:17:59,473 | INFO | finagent.security | API request | method=GET | path=/security/metrics | status=200 | duration=4.697s | ip=2401:4900:9781:f0a:a8eb:c6ff:fe7d:9a72
+2026-09-12 00:17:59,476 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/cases client=2401:4900:9781:f0a:a8eb:c6ff:fe7d:9a72
+2026-09-12 00:17:59,490 | INFO | finagent.security | API request | method=GET | path=/cases | status=200 | duration=0.014s | ip=2401:4900:9781:f0a:a8eb:c6ff:fe7d:9a72
+2026-09-12 00:18:21,702 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/cases client=2401:4900:9781:f0a:a8eb:c6ff:fe7d:9a72
+2026-09-12 00:18:21,708 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/security/posture client=2401:4900:9781:f0a:a8eb:c6ff:fe7d:9a72
+2026-09-12 00:18:21,714 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/security/metrics client=2401:4900:9781:f0a:a8eb:c6ff:fe7d:9a72
+2026-09-12 00:18:21,729 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/security/incidents client=2401:4900:9781:f0a:a8eb:c6ff:fe7d:9a72
+2026-09-12 00:18:21,732 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/security/audit client=2401:4900:9781:f0a:a8eb:c6ff:fe7d:9a72
+2026-09-12 00:18:24,972 | INFO | finagent.security | API request | method=GET | path=/cases | status=200 | duration=3.270s | ip=2401:4900:9781:f0a:a8eb:c6ff:fe7d:9a72
+2026-09-12 00:18:24,974 | INFO | finagent.security | API request | method=GET | path=/security/posture | status=200 | duration=3.266s | ip=2401:4900:9781:f0a:a8eb:c6ff:fe7d:9a72
+2026-09-12 00:18:24,974 | INFO | finagent.security | API request | method=GET | path=/security/metrics | status=200 | duration=3.260s | ip=2401:4900:9781:f0a:a8eb:c6ff:fe7d:9a72
+2026-09-12 00:18:24,988 | INFO | finagent.security | API request | method=GET | path=/security/incidents | status=200 | duration=3.258s | ip=2401:4900:9781:f0a:a8eb:c6ff:fe7d:9a72
+2026-09-12 00:18:24,990 | INFO | finagent.security | API request | method=GET | path=/security/audit | status=200 | duration=3.258s | ip=2401:4900:9781:f0a:a8eb:c6ff:fe7d:9a72
+2026-09-12 00:18:26,616 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/security/incidents client=2401:4900:9781:f0a:a8eb:c6ff:fe7d:9a72
+2026-09-12 00:18:26,623 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/cases client=2401:4900:9781:f0a:a8eb:c6ff:fe7d:9a72
+2026-09-12 00:18:26,629 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/security/metrics client=2401:4900:9781:f0a:a8eb:c6ff:fe7d:9a72
+2026-09-12 00:18:26,631 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/security/posture client=2401:4900:9781:f0a:a8eb:c6ff:fe7d:9a72
+2026-09-12 00:18:26,637 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/security/audit client=2401:4900:9781:f0a:a8eb:c6ff:fe7d:9a72
+2026-09-12 00:18:29,884 | INFO | finagent.security | API request | method=GET | path=/security/incidents | status=200 | duration=3.267s | ip=2401:4900:9781:f0a:a8eb:c6ff:fe7d:9a72
+2026-09-12 00:18:29,889 | INFO | finagent.security | API request | method=GET | path=/cases | status=200 | duration=3.265s | ip=2401:4900:9781:f0a:a8eb:c6ff:fe7d:9a72
+2026-09-12 00:18:29,889 | INFO | finagent.security | API request | method=GET | path=/security/metrics | status=200 | duration=3.260s | ip=2401:4900:9781:f0a:a8eb:c6ff:fe7d:9a72
+2026-09-12 00:18:29,891 | INFO | finagent.security | API request | method=GET | path=/security/posture | status=200 | duration=3.260s | ip=2401:4900:9781:f0a:a8eb:c6ff:fe7d:9a72
+2026-09-12 00:18:29,893 | INFO | finagent.security | API request | method=GET | path=/security/audit | status=200 | duration=3.256s | ip=2401:4900:9781:f0a:a8eb:c6ff:fe7d:9a72
+2026-09-12 00:18:42,081 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/cases client=2401:4900:9781:f0a:a8eb:c6ff:fe7d:9a72
+2026-09-12 00:18:42,088 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/security/incidents client=2401:4900:9781:f0a:a8eb:c6ff:fe7d:9a72
+2026-09-12 00:18:42,092 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/security/posture client=2401:4900:9781:f0a:a8eb:c6ff:fe7d:9a72
+2026-09-12 00:18:42,097 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/security/audit client=2401:4900:9781:f0a:a8eb:c6ff:fe7d:9a72
+2026-09-12 00:18:42,104 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/security/metrics client=2401:4900:9781:f0a:a8eb:c6ff:fe7d:9a72
+2026-09-12 00:18:45,369 | INFO | finagent.security | API request | method=GET | path=/cases | status=200 | duration=3.286s | ip=2401:4900:9781:f0a:a8eb:c6ff:fe7d:9a72
+2026-09-12 00:18:45,369 | INFO | finagent.security | API request | method=GET | path=/security/incidents | status=200 | duration=3.281s | ip=2401:4900:9781:f0a:a8eb:c6ff:fe7d:9a72
+2026-09-12 00:18:45,373 | INFO | finagent.security | API request | method=GET | path=/security/metrics | status=200 | duration=3.268s | ip=2401:4900:9781:f0a:a8eb:c6ff:fe7d:9a72
+2026-09-12 00:18:45,375 | INFO | finagent.security | API request | method=GET | path=/security/posture | status=200 | duration=3.283s | ip=2401:4900:9781:f0a:a8eb:c6ff:fe7d:9a72
+2026-09-12 00:18:45,378 | INFO | finagent.security | API request | method=GET | path=/security/audit | status=200 | duration=3.281s | ip=2401:4900:9781:f0a:a8eb:c6ff:fe7d:9a72
+2026-09-12 11:05:18,379 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/docs client=127.0.0.1
+2026-09-12 11:05:18,386 | INFO | finagent.security | API request | method=GET | path=/docs | status=200 | duration=0.004s | ip=127.0.0.1
+2026-09-12 11:05:18,644 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/openapi.json client=127.0.0.1
+2026-09-12 11:05:18,681 | INFO | finagent.security | API request | method=GET | path=/openapi.json | status=200 | duration=0.037s | ip=127.0.0.1
+2026-09-12 11:15:54,085 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/ client=2401:4900:4fd8:e838:f143:8921:e043:b3a9
+2026-09-12 11:15:54,092 | INFO | finagent.security | API request | method=GET | path=/ | status=200 | duration=0.006s | ip=2401:4900:4fd8:e838:f143:8921:e043:b3a9
+2026-09-12 11:15:55,437 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/favicon.ico client=2401:4900:4fd8:e838:f143:8921:e043:b3a9
+2026-09-12 11:15:55,437 | INFO | finagent.security | API request | method=GET | path=/favicon.ico | status=404 | duration=0.000s | ip=2401:4900:4fd8:e838:f143:8921:e043:b3a9
+2026-09-12 11:16:03,405 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/docs client=2401:4900:4fd8:e838:f143:8921:e043:b3a9
+2026-09-12 11:16:03,408 | INFO | finagent.security | API request | method=GET | path=/docs | status=200 | duration=0.004s | ip=2401:4900:4fd8:e838:f143:8921:e043:b3a9
+2026-09-12 11:16:06,864 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/openapi.json client=2401:4900:4fd8:e838:f143:8921:e043:b3a9
+2026-09-12 11:16:06,869 | INFO | finagent.security | API request | method=GET | path=/openapi.json | status=200 | duration=0.004s | ip=2401:4900:4fd8:e838:f143:8921:e043:b3a9
+2026-09-12 11:20:28,964 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/docs client=2401:4900:4fd8:e838:f143:8921:e043:b3a9
+2026-09-12 11:20:28,969 | INFO | finagent.security | API request | method=GET | path=/docs | status=200 | duration=0.006s | ip=2401:4900:4fd8:e838:f143:8921:e043:b3a9
+2026-09-12 11:20:29,882 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/openapi.json client=2401:4900:4fd8:e838:f143:8921:e043:b3a9
+2026-09-12 11:20:29,889 | INFO | finagent.security | API request | method=GET | path=/openapi.json | status=200 | duration=0.008s | ip=2401:4900:4fd8:e838:f143:8921:e043:b3a9
+2026-09-12 12:13:09,387 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=POST path=/auth/login client=2401:4900:cbca:3aca:457b:a0f0:aba8:8c2b
+2026-09-12 12:13:09,984 | INFO | finagent.security | EVENT=LOGIN_SUCCESS | username=admin role=ADMIN client=2401:4900:cbca:3aca:457b:a0f0:aba8:8c2b
+2026-09-12 12:13:10,010 | INFO | finagent.security | API request | method=POST | path=/auth/login | status=200 | duration=0.621s | ip=2401:4900:cbca:3aca:457b:a0f0:aba8:8c2b
+2026-09-12 12:13:10,446 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/cases client=2401:4900:cbca:3aca:457b:a0f0:aba8:8c2b
+2026-09-12 12:13:10,490 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/security/posture client=2401:4900:cbca:3aca:457b:a0f0:aba8:8c2b
+2026-09-12 12:13:10,495 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/security/audit client=2401:4900:cbca:3aca:457b:a0f0:aba8:8c2b
+2026-09-12 12:13:10,500 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/security/metrics client=2401:4900:cbca:3aca:457b:a0f0:aba8:8c2b
+2026-09-12 12:13:10,507 | INFO | finagent.security | API request | method=GET | path=/cases | status=200 | duration=0.060s | ip=2401:4900:cbca:3aca:457b:a0f0:aba8:8c2b
+2026-09-12 12:13:10,517 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/security/incidents client=2401:4900:cbca:3aca:457b:a0f0:aba8:8c2b
+2026-09-12 12:13:34,149 | INFO | finagent.security | API request | method=GET | path=/security/posture | status=200 | duration=23.659s | ip=2401:4900:cbca:3aca:457b:a0f0:aba8:8c2b
+2026-09-12 12:13:34,151 | INFO | finagent.security | API request | method=GET | path=/security/metrics | status=200 | duration=23.650s | ip=2401:4900:cbca:3aca:457b:a0f0:aba8:8c2b
+2026-09-12 12:13:34,153 | INFO | finagent.security | API request | method=GET | path=/security/audit | status=200 | duration=23.656s | ip=2401:4900:cbca:3aca:457b:a0f0:aba8:8c2b
+2026-09-12 12:13:34,155 | INFO | finagent.security | API request | method=GET | path=/security/incidents | status=200 | duration=23.638s | ip=2401:4900:cbca:3aca:457b:a0f0:aba8:8c2b
+2026-09-12 12:13:56,378 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=POST path=/cases client=2401:4900:cbca:3aca:457b:a0f0:aba8:8c2b
+2026-09-12 12:13:56,530 | INFO | finagent.security | API request | method=POST | path=/cases | status=200 | duration=0.140s | ip=2401:4900:cbca:3aca:457b:a0f0:aba8:8c2b
+2026-09-12 12:13:56,680 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/cases client=2401:4900:cbca:3aca:457b:a0f0:aba8:8c2b
+2026-09-12 12:13:56,700 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/security/audit client=2401:4900:cbca:3aca:457b:a0f0:aba8:8c2b
+2026-09-12 12:13:56,701 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/security/metrics client=2401:4900:cbca:3aca:457b:a0f0:aba8:8c2b
+2026-09-12 12:13:56,710 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/security/incidents client=2401:4900:cbca:3aca:457b:a0f0:aba8:8c2b
+2026-09-12 12:13:56,721 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/security/posture client=2401:4900:cbca:3aca:457b:a0f0:aba8:8c2b
+2026-09-12 12:13:56,734 | INFO | finagent.security | API request | method=GET | path=/cases | status=200 | duration=0.054s | ip=2401:4900:cbca:3aca:457b:a0f0:aba8:8c2b
+2026-09-12 12:14:01,372 | INFO | finagent.security | API request | method=GET | path=/security/audit | status=200 | duration=4.669s | ip=2401:4900:cbca:3aca:457b:a0f0:aba8:8c2b
+2026-09-12 12:14:01,374 | INFO | finagent.security | API request | method=GET | path=/security/metrics | status=200 | duration=4.673s | ip=2401:4900:cbca:3aca:457b:a0f0:aba8:8c2b
+2026-09-12 12:14:01,376 | INFO | finagent.security | API request | method=GET | path=/security/incidents | status=200 | duration=4.665s | ip=2401:4900:cbca:3aca:457b:a0f0:aba8:8c2b
+2026-09-12 12:14:01,379 | INFO | finagent.security | API request | method=GET | path=/security/posture | status=200 | duration=4.658s | ip=2401:4900:cbca:3aca:457b:a0f0:aba8:8c2b
+2026-09-12 12:14:30,580 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/customers/C090 client=2401:4900:cbca:3aca:457b:a0f0:aba8:8c2b
+2026-09-12 12:14:30,601 | INFO | finagent.security | API request | method=GET | path=/customers/C090 | status=200 | duration=0.019s | ip=2401:4900:cbca:3aca:457b:a0f0:aba8:8c2b
+2026-09-12 12:14:58,310 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/customers/C068/network client=127.0.0.1
+2026-09-12 12:14:58,318 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/customers/C068/related-accounts client=127.0.0.1
+2026-09-12 12:14:58,371 | INFO | finagent.security | API request | method=GET | path=/customers/C068/network | status=200 | duration=0.060s | ip=127.0.0.1
+2026-09-12 12:14:59,081 | INFO | finagent.security | API request | method=GET | path=/customers/C068/related-accounts | status=200 | duration=0.759s | ip=127.0.0.1
+2026-09-12 12:17:35,768 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/cases/CASE-B64BD56D1F90 client=2401:4900:cbca:3aca:457b:a0f0:aba8:8c2b
+2026-09-12 12:17:35,773 | INFO | finagent.security | API request | method=GET | path=/cases/CASE-B64BD56D1F90 | status=200 | duration=0.004s | ip=2401:4900:cbca:3aca:457b:a0f0:aba8:8c2b
+2026-09-12 12:29:12,206 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=PATCH path=/cases/CASE-B64BD56D1F90 client=2401:4900:cbca:3aca:457b:a0f0:aba8:8c2b
+2026-09-12 12:29:12,251 | INFO | finagent.security | API request | method=PATCH | path=/cases/CASE-B64BD56D1F90 | status=200 | duration=0.043s | ip=2401:4900:cbca:3aca:457b:a0f0:aba8:8c2b
+2026-09-12 12:29:12,685 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/security/incidents client=2401:4900:cbca:3aca:457b:a0f0:aba8:8c2b
+2026-09-12 12:29:12,695 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/cases client=2401:4900:cbca:3aca:457b:a0f0:aba8:8c2b
+2026-09-12 12:29:12,699 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/security/metrics client=2401:4900:cbca:3aca:457b:a0f0:aba8:8c2b
+2026-09-12 12:29:12,705 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/security/audit client=2401:4900:cbca:3aca:457b:a0f0:aba8:8c2b
+2026-09-12 12:29:12,724 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/security/posture client=2401:4900:cbca:3aca:457b:a0f0:aba8:8c2b
+2026-09-12 12:29:12,753 | INFO | finagent.security | API request | method=GET | path=/security/incidents | status=200 | duration=0.068s | ip=2401:4900:cbca:3aca:457b:a0f0:aba8:8c2b
+2026-09-12 12:29:12,755 | INFO | finagent.security | API request | method=GET | path=/cases | status=200 | duration=0.060s | ip=2401:4900:cbca:3aca:457b:a0f0:aba8:8c2b
+2026-09-12 12:29:12,756 | INFO | finagent.security | API request | method=GET | path=/security/metrics | status=200 | duration=0.057s | ip=2401:4900:cbca:3aca:457b:a0f0:aba8:8c2b
+2026-09-12 12:29:12,759 | INFO | finagent.security | API request | method=GET | path=/security/audit | status=200 | duration=0.054s | ip=2401:4900:cbca:3aca:457b:a0f0:aba8:8c2b
+2026-09-12 12:29:32,104 | INFO | finagent.security | API request | method=GET | path=/security/posture | status=200 | duration=19.380s | ip=2401:4900:cbca:3aca:457b:a0f0:aba8:8c2b
+2026-09-12 12:29:44,030 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/cases client=2401:4900:cbca:3aca:457b:a0f0:aba8:8c2b
+2026-09-12 12:29:44,044 | INFO | finagent.security | API request | method=GET | path=/cases | status=200 | duration=0.013s | ip=2401:4900:cbca:3aca:457b:a0f0:aba8:8c2b
+2026-09-12 12:29:44,106 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/security/metrics client=2401:4900:cbca:3aca:457b:a0f0:aba8:8c2b
+2026-09-12 12:29:44,114 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/security/posture client=2401:4900:cbca:3aca:457b:a0f0:aba8:8c2b
+2026-09-12 12:29:44,127 | INFO | finagent.security | API request | method=GET | path=/security/metrics | status=200 | duration=0.021s | ip=2401:4900:cbca:3aca:457b:a0f0:aba8:8c2b
+2026-09-12 12:29:48,853 | INFO | finagent.security | API request | method=GET | path=/security/posture | status=200 | duration=4.739s | ip=2401:4900:cbca:3aca:457b:a0f0:aba8:8c2b
+2026-09-12 12:29:48,855 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/security/incidents client=2401:4900:cbca:3aca:457b:a0f0:aba8:8c2b
+2026-09-12 12:29:48,861 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/security/audit client=2401:4900:cbca:3aca:457b:a0f0:aba8:8c2b
+2026-09-12 12:29:48,880 | INFO | finagent.security | API request | method=GET | path=/security/incidents | status=200 | duration=0.025s | ip=2401:4900:cbca:3aca:457b:a0f0:aba8:8c2b
+2026-09-12 12:29:48,883 | INFO | finagent.security | API request | method=GET | path=/security/audit | status=200 | duration=0.022s | ip=2401:4900:cbca:3aca:457b:a0f0:aba8:8c2b
+2026-09-12 12:29:58,559 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/cases/CASE-B64BD56D1F90 client=2401:4900:cbca:3aca:457b:a0f0:aba8:8c2b
+2026-09-12 12:29:58,562 | INFO | finagent.security | API request | method=GET | path=/cases/CASE-B64BD56D1F90 | status=200 | duration=0.003s | ip=2401:4900:cbca:3aca:457b:a0f0:aba8:8c2b
+2026-09-12 12:31:27,750 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=POST path=/auth/login client=2401:4900:cbca:3aca:457b:a0f0:aba8:8c2b
+2026-09-12 12:31:28,316 | INFO | finagent.security | EVENT=LOGIN_SUCCESS | username=admin role=ADMIN client=2401:4900:cbca:3aca:457b:a0f0:aba8:8c2b
+2026-09-12 12:31:28,344 | INFO | finagent.security | API request | method=POST | path=/auth/login | status=200 | duration=0.595s | ip=2401:4900:cbca:3aca:457b:a0f0:aba8:8c2b
+2026-09-12 12:31:28,776 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/security/metrics client=2401:4900:cbca:3aca:457b:a0f0:aba8:8c2b
+2026-09-12 12:31:28,791 | INFO | finagent.security | API request | method=GET | path=/security/metrics | status=200 | duration=0.011s | ip=2401:4900:cbca:3aca:457b:a0f0:aba8:8c2b
+2026-09-12 12:31:28,814 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/cases client=2401:4900:cbca:3aca:457b:a0f0:aba8:8c2b
+2026-09-12 12:31:28,822 | INFO | finagent.security | API request | method=GET | path=/cases | status=200 | duration=0.007s | ip=2401:4900:cbca:3aca:457b:a0f0:aba8:8c2b
+2026-09-12 12:31:28,833 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/security/incidents client=2401:4900:cbca:3aca:457b:a0f0:aba8:8c2b
+2026-09-12 12:31:28,846 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/security/audit client=2401:4900:cbca:3aca:457b:a0f0:aba8:8c2b
+2026-09-12 12:31:28,849 | INFO | finagent.security | API request | method=GET | path=/security/incidents | status=200 | duration=0.016s | ip=2401:4900:cbca:3aca:457b:a0f0:aba8:8c2b
+2026-09-12 12:31:28,854 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/security/posture client=2401:4900:cbca:3aca:457b:a0f0:aba8:8c2b
+2026-09-12 12:31:28,869 | INFO | finagent.security | API request | method=GET | path=/security/audit | status=200 | duration=0.023s | ip=2401:4900:cbca:3aca:457b:a0f0:aba8:8c2b
+2026-09-12 12:31:32,264 | INFO | finagent.security | API request | method=GET | path=/security/posture | status=200 | duration=3.410s | ip=2401:4900:cbca:3aca:457b:a0f0:aba8:8c2b
+2026-09-12 12:31:48,744 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/cases/CASE-91EB26E665B2 client=2401:4900:cbca:3aca:457b:a0f0:aba8:8c2b
+2026-09-12 12:31:48,750 | INFO | finagent.security | API request | method=GET | path=/cases/CASE-91EB26E665B2 | status=200 | duration=0.006s | ip=2401:4900:cbca:3aca:457b:a0f0:aba8:8c2b
+2026-09-12 12:32:52,527 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=POST path=/auth/login client=2401:4900:cbca:3aca:457b:a0f0:aba8:8c2b
+2026-09-12 12:32:53,084 | INFO | finagent.security | EVENT=LOGIN_SUCCESS | username=admin role=ADMIN client=2401:4900:cbca:3aca:457b:a0f0:aba8:8c2b
+2026-09-12 12:32:53,106 | INFO | finagent.security | API request | method=POST | path=/auth/login | status=200 | duration=0.579s | ip=2401:4900:cbca:3aca:457b:a0f0:aba8:8c2b
+2026-09-12 12:33:49,791 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=POST path=/cases client=2401:4900:cbca:3aca:457b:a0f0:aba8:8c2b
+2026-09-12 12:33:51,653 | INFO | finagent.security | API request | method=POST | path=/cases | status=200 | duration=1.861s | ip=2401:4900:cbca:3aca:457b:a0f0:aba8:8c2b
+2026-09-12 12:33:51,946 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/cases client=2401:4900:cbca:3aca:457b:a0f0:aba8:8c2b
+2026-09-12 12:33:51,956 | INFO | finagent.security | API request | method=GET | path=/cases | status=200 | duration=0.010s | ip=2401:4900:cbca:3aca:457b:a0f0:aba8:8c2b
+2026-09-12 12:33:51,964 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/security/posture client=2401:4900:cbca:3aca:457b:a0f0:aba8:8c2b
+2026-09-12 12:33:55,276 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/security/metrics client=2401:4900:cbca:3aca:457b:a0f0:aba8:8c2b
+2026-09-12 12:33:55,279 | INFO | finagent.security | API request | method=GET | path=/security/posture | status=200 | duration=3.315s | ip=2401:4900:cbca:3aca:457b:a0f0:aba8:8c2b
+2026-09-12 12:33:55,287 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/security/audit client=2401:4900:cbca:3aca:457b:a0f0:aba8:8c2b
+2026-09-12 12:33:55,293 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/security/incidents client=2401:4900:cbca:3aca:457b:a0f0:aba8:8c2b
+2026-09-12 12:33:55,308 | INFO | finagent.security | API request | method=GET | path=/security/metrics | status=200 | duration=0.031s | ip=2401:4900:cbca:3aca:457b:a0f0:aba8:8c2b
+2026-09-12 12:33:55,322 | INFO | finagent.security | API request | method=GET | path=/security/audit | status=200 | duration=0.035s | ip=2401:4900:cbca:3aca:457b:a0f0:aba8:8c2b
+2026-09-12 12:33:55,325 | INFO | finagent.security | API request | method=GET | path=/security/incidents | status=200 | duration=0.032s | ip=2401:4900:cbca:3aca:457b:a0f0:aba8:8c2b
+2026-09-12 12:34:03,402 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/cases/CASE-E16692A862E3 client=2401:4900:cbca:3aca:457b:a0f0:aba8:8c2b
+2026-09-12 12:34:03,409 | INFO | finagent.security | API request | method=GET | path=/cases/CASE-E16692A862E3 | status=200 | duration=0.007s | ip=2401:4900:cbca:3aca:457b:a0f0:aba8:8c2b
+2026-09-12 13:14:36,762 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/security/audit client=2401:4900:cbca:3aca:a963:76c:c264:1458
+2026-09-12 13:14:36,772 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/cases client=2401:4900:cbca:3aca:a963:76c:c264:1458
+2026-09-12 13:14:36,780 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/security/incidents client=2401:4900:cbca:3aca:a963:76c:c264:1458
+2026-09-12 13:14:36,788 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/security/posture client=2401:4900:cbca:3aca:a963:76c:c264:1458
+2026-09-12 13:14:36,795 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/security/metrics client=2401:4900:cbca:3aca:a963:76c:c264:1458
+2026-09-12 13:14:36,824 | INFO | finagent.security | API request | method=GET | path=/security/audit | status=401 | duration=0.061s | ip=2401:4900:cbca:3aca:a963:76c:c264:1458
+2026-09-12 13:14:36,824 | WARNING | finagent.security | EVENT=UNAUTHORIZED_ACCESS | method=GET path=/security/audit client=2401:4900:cbca:3aca:a963:76c:c264:1458
+2026-09-12 13:14:36,853 | INFO | finagent.security | API request | method=GET | path=/cases | status=401 | duration=0.078s | ip=2401:4900:cbca:3aca:a963:76c:c264:1458
+2026-09-12 13:14:36,854 | WARNING | finagent.security | EVENT=UNAUTHORIZED_ACCESS | method=GET path=/cases client=2401:4900:cbca:3aca:a963:76c:c264:1458
+2026-09-12 13:14:36,875 | INFO | finagent.security | API request | method=GET | path=/security/incidents | status=401 | duration=0.095s | ip=2401:4900:cbca:3aca:a963:76c:c264:1458
+2026-09-12 13:14:36,876 | WARNING | finagent.security | EVENT=UNAUTHORIZED_ACCESS | method=GET path=/security/incidents client=2401:4900:cbca:3aca:a963:76c:c264:1458
+2026-09-12 13:14:36,900 | INFO | finagent.security | API request | method=GET | path=/security/posture | status=401 | duration=0.112s | ip=2401:4900:cbca:3aca:a963:76c:c264:1458
+2026-09-12 13:14:36,901 | WARNING | finagent.security | EVENT=UNAUTHORIZED_ACCESS | method=GET path=/security/posture client=2401:4900:cbca:3aca:a963:76c:c264:1458
+2026-09-12 13:14:36,920 | INFO | finagent.security | API request | method=GET | path=/security/metrics | status=401 | duration=0.124s | ip=2401:4900:cbca:3aca:a963:76c:c264:1458
+2026-09-12 13:14:36,921 | WARNING | finagent.security | EVENT=UNAUTHORIZED_ACCESS | method=GET path=/security/metrics client=2401:4900:cbca:3aca:a963:76c:c264:1458
+2026-09-12 13:16:59,153 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=POST path=/auth/login client=2401:4900:cbca:3aca:a963:76c:c264:1458
+2026-09-12 13:16:59,942 | INFO | finagent.security | EVENT=LOGIN_SUCCESS | username=admin role=ADMIN client=2401:4900:cbca:3aca:a963:76c:c264:1458
+2026-09-12 13:16:59,965 | INFO | finagent.security | API request | method=POST | path=/auth/login | status=200 | duration=0.812s | ip=2401:4900:cbca:3aca:a963:76c:c264:1458
+2026-09-12 13:17:00,273 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/security/posture client=2401:4900:cbca:3aca:a963:76c:c264:1458
+2026-09-12 13:17:18,269 | INFO | finagent.security | API request | method=GET | path=/security/posture | status=200 | duration=17.995s | ip=2401:4900:cbca:3aca:a963:76c:c264:1458
+2026-09-12 13:17:18,280 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/security/audit client=2401:4900:cbca:3aca:a963:76c:c264:1458
+2026-09-12 13:17:18,287 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/security/metrics client=2401:4900:cbca:3aca:a963:76c:c264:1458
+2026-09-12 13:17:18,289 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/cases client=2401:4900:cbca:3aca:a963:76c:c264:1458
+2026-09-12 13:17:18,299 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/security/incidents client=2401:4900:cbca:3aca:a963:76c:c264:1458
+2026-09-12 13:17:18,332 | INFO | finagent.security | API request | method=GET | path=/security/audit | status=200 | duration=0.049s | ip=2401:4900:cbca:3aca:a963:76c:c264:1458
+2026-09-12 13:17:18,336 | INFO | finagent.security | API request | method=GET | path=/security/metrics | status=200 | duration=0.047s | ip=2401:4900:cbca:3aca:a963:76c:c264:1458
+2026-09-12 13:17:18,338 | INFO | finagent.security | API request | method=GET | path=/cases | status=200 | duration=0.044s | ip=2401:4900:cbca:3aca:a963:76c:c264:1458
+2026-09-12 13:17:18,340 | INFO | finagent.security | API request | method=GET | path=/security/incidents | status=200 | duration=0.041s | ip=2401:4900:cbca:3aca:a963:76c:c264:1458
+2026-09-12 13:18:00,081 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=POST path=/cases client=2401:4900:cbca:3aca:a963:76c:c264:1458
+2026-09-12 13:18:02,443 | INFO | finagent.security | API request | method=POST | path=/cases | status=200 | duration=2.360s | ip=2401:4900:cbca:3aca:a963:76c:c264:1458
+2026-09-12 13:18:02,639 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/security/metrics client=2401:4900:cbca:3aca:a963:76c:c264:1458
+2026-09-12 13:18:02,652 | INFO | finagent.security | API request | method=GET | path=/security/metrics | status=200 | duration=0.014s | ip=2401:4900:cbca:3aca:a963:76c:c264:1458
+2026-09-12 13:18:02,675 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/security/posture client=2401:4900:cbca:3aca:a963:76c:c264:1458
+2026-09-12 13:18:02,687 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/security/audit client=2401:4900:cbca:3aca:a963:76c:c264:1458
+2026-09-12 13:18:02,694 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/security/incidents client=2401:4900:cbca:3aca:a963:76c:c264:1458
+2026-09-12 13:18:02,699 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/cases client=2401:4900:cbca:3aca:a963:76c:c264:1458
+2026-09-12 13:18:08,371 | INFO | finagent.security | API request | method=GET | path=/security/posture | status=200 | duration=5.695s | ip=2401:4900:cbca:3aca:a963:76c:c264:1458
+2026-09-12 13:18:08,394 | INFO | finagent.security | API request | method=GET | path=/cases | status=200 | duration=5.694s | ip=2401:4900:cbca:3aca:a963:76c:c264:1458
+2026-09-12 13:18:08,396 | INFO | finagent.security | API request | method=GET | path=/security/incidents | status=200 | duration=5.702s | ip=2401:4900:cbca:3aca:a963:76c:c264:1458
+2026-09-12 13:18:08,398 | INFO | finagent.security | API request | method=GET | path=/security/audit | status=200 | duration=5.710s | ip=2401:4900:cbca:3aca:a963:76c:c264:1458
+2026-09-12 13:18:09,399 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/cases/CASE-8CF271F64FE7 client=2401:4900:cbca:3aca:a963:76c:c264:1458
+2026-09-12 13:18:09,405 | INFO | finagent.security | API request | method=GET | path=/cases/CASE-8CF271F64FE7 | status=200 | duration=0.006s | ip=2401:4900:cbca:3aca:a963:76c:c264:1458
+2026-09-12 13:18:31,411 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=POST path=/cases client=2401:4900:cbca:3aca:a963:76c:c264:1458
+2026-09-12 13:18:33,600 | INFO | finagent.security | API request | method=POST | path=/cases | status=200 | duration=2.188s | ip=2401:4900:cbca:3aca:a963:76c:c264:1458
+2026-09-12 13:18:33,880 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/security/posture client=2401:4900:cbca:3aca:a963:76c:c264:1458
+2026-09-12 13:18:33,896 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/security/audit client=2401:4900:cbca:3aca:a963:76c:c264:1458
+2026-09-12 13:18:33,901 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/cases client=2401:4900:cbca:3aca:a963:76c:c264:1458
+2026-09-12 13:18:33,906 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/security/incidents client=2401:4900:cbca:3aca:a963:76c:c264:1458
+2026-09-12 13:18:33,912 | INFO | finagent.security | EVENT=HTTP_REQUEST | method=GET path=/security/metrics client=2401:4900:cbca:3aca:a963:76c:c264:1458
+2026-09-12 13:18:37,906 | INFO | finagent.security | API request | method=GET | path=/security/posture | status=200 | duration=4.025s | ip=2401:4900:cbca:3aca:a963:76c:c264:1458
+2026-09-12 13:18:37,927 | INFO | finagent.security | API request | method=GET | path=/security/audit | status=200 | duration=4.030s | ip=2401:4900:cbca:3aca:a963:76c:c264:1458
+2026-09-12 13:18:37,928 | INFO | finagent.security | API request | method=GET | path=/cases | status=200 | duration=4.027s | ip=2401:4900:cbca:3aca:a963:76c:c264:1458
+2026-09-12 13:18:37,931 | INFO | finagent.security | API request | method=GET | path=/security/incidents | status=200 | duration=4.024s | ip=2401:4900:cbca:3aca:a963:76c:c264:1458
+2026-09-12 13:18:37,933 | INFO | finagent.security | API request | method=GET | path=/security/metrics | status=200 | duration=4.021s | ip=2401:4900:cbca:3aca:a963:76c:c264:1458
